@@ -110,7 +110,7 @@ var currentQuestion = null;
 // Initialise everything
 let initialise = ()=>{
 	
-	// Reset the answers
+	// Reset all the answers
 	questions.forEach((question, index, array)=>{
 		question.answer = null;
 	});
@@ -145,7 +145,7 @@ let initialise = ()=>{
 		current.classList.remove("current");
 	});
 	
-	// reset the current question
+	// reset the current questions
 	currentQuestion = null;
 	
 	showQuestion();
