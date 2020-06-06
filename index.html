@@ -1,0 +1,100 @@
+<!-- Document   : Trivia Game
+     Created on : 30-May-2020, 1:15 AM
+     Author     : Biswajit Sarkar || 991589760
+     Description: html for a trivia question card. 
+	 -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Trivia Game</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section id="quiz">
+			<header>
+				<h1>Travia Quiz</h1>
+				
+			<!-- this section (line 17 -30) represents a section of a page whose purpose is to 
+				provide navigation links to the all questions -->
+				<nav>
+					<ul>
+						<li class="navigation" id="Question0" data-question="0">1</li>
+						<li class="navigation" id="Question1" data-question="1">2</li>
+						<li class="navigation" id="Question2" data-question="2">3</li>
+						<li class="navigation" id="Question3" data-question="3">4</li>
+						<li class="navigation" id="Question4" data-question="4">5</li>
+						<li class="navigation" id="Question5" data-question="5">6</li>
+						<li class="navigation" id="Question6" data-question="6">7</li>
+						<li class="navigation" id="Question7" data-question="7">8</li>
+						<li class="navigation" id="Question8" data-question="8">9</li>
+						<li class="navigation" id="Question9" data-question="9">10</li>
+					</ul>
+				</nav>
+			</header>
+			
+		<!-- this section (line 33 - 55) represents a section each question followed by 4 options 
+				of radio button and validation upon clicking -->
+				
+			<div id="QuestionContainer">
+				<span id="QuestionNo">1.</span>
+				<span id="Question"></span>
+			</div>
+			<div id="Options">
+				<div class="option">
+					<input type="radio" name="answer" id="A" value="a">
+					<label for="A" id="LabelA"></label>
+				</div>
+				<div class="option">
+					<input type="radio" name="answer" id="B" value="b">
+					<label for="B" id="LabelB"></label>
+				</div>
+				<div class="option">
+					<input type="radio" name="answer" id="C" value="c">
+					<label for="C" id="LabelC"></label>
+				</div>
+				<div class="option">
+					<input type="radio" name="answer" id="D" value="d">
+					<label for="D" id="LabelD"></label>
+				</div>
+			</div>
+			
+		<!-- this section (line 59 - 70) represents validation of Enter Answer, Next Question and 
+			     Restart button -->
+				
+			<div id="AnswerButtons" class="buttonRows">
+				<div id="SubmitButton">Enter Answer</div>
+				<div id="NextButton">Next Question</div>
+			</div>
+			<div id="ControlButtons" class="buttonRows">
+				<div id="Help">Help</div>
+				<div id="Restart">Restart</div>
+			</div>
+		</section>	
+		
+		<!-- this section (line 72 - 92) represents a section of a page whose purpose is to 
+				validate help button and provide popup links to the instruction page -->
+				
+		<aside id="HelpPopup" class="hidden">
+			<div>
+				<span id="CloseHelp">X</span>
+				<header>
+					<h1>Help</h1>
+				</header>
+				<p>In order to play the game, you have to select the right option that you think is the correct answer to the question.</p>
+				<p>Then you click on the <span class="bold">Enter Answer</span> to submit your answer.</p>
+				<p>The correct answer will appear with a green background. If you have selected an incorrect option, it will appear in red background.</p>
+				<p>You can click on the <span class="bold">Next Question</span> to navigate to the next question.</p>
+				<p>On the top just below the heading are navigation buttons for questions.</p>
+				<p>If a button background is blue, it means you have not attemped the question.</p>
+				<p>If the button background is green, it means you have correctly answered the question.</p>
+				<p>If you have not answered a question correctly, the button background will be red.</p>
+				<p>The <span class="bold">Restart</span> button will restart the quiz if you click on it.</p>
+				<p>This popup window will be displayed when you click the <span class="bold">Help</span> button.</p>
+				<div class="buttonRows">
+					<div id="HelpClose">Close Help</div>
+				</div>
+			</div>
+		</aside>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
