@@ -1,5 +1,5 @@
   // Author     : Biswajit Sarkar || 991589760
- //Description: java script for a trivia question card.
+ //Description: java script for a trivia question card
 
 
 //Initialise questions1 with 4 options with the option a correct answer
@@ -110,7 +110,7 @@ var currentQuestion = null;
 // Initialise everything
 let initialise = ()=>{
 	
-	// Reset all the answers
+	// Reset the answers
 	questions.forEach((question, index, array)=>{
 		question.answer = null;
 	});
@@ -145,7 +145,7 @@ let initialise = ()=>{
 		current.classList.remove("current");
 	});
 	
-	// reset the current questions
+	// reset the current question
 	currentQuestion = null;
 	
 	showQuestion();
@@ -231,7 +231,7 @@ let show = ()=>{
 	}
 }
 
-// help button pop up page fuctionality
+// help button pop up page fuctionality validation
 let showHelp = ()=>{
 	document.getElementById("HelpPopup").classList.remove("hidden");
 };
